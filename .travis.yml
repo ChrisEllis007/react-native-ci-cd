@@ -15,10 +15,10 @@ matrix:
     sudo: required
     install:
       - sudo apt-get install -y ccrypt
-      - echo $encrypted_0a6446eb3ae3_key > info.txt
+      - echo $encrypted_0a6446eb3ae3_iv > info.txt
       - ccencrypt info.txt -K $KNOWN_SECRET
       - cat info.txt.cpt | base64
-      - npm install
+      #ß- npm install
 #    android:
 #      licenses:
 #        - 'android-sdk-preview-license-.+'
